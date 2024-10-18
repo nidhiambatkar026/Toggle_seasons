@@ -10,14 +10,28 @@
     <div class="container">
         <h1 class="main_heading">Season Changing Toggler</h1>
         <div class="side_bar">
-            <img src="./Images/sun.png" alt="summer" class="icons"/>
-            <img src="./Images/jacket.png" alt="Winter" class="icons"/>
-            <img src="./Images/umbrella.png" alt="Mansoon" class="icons"/>
+            <img src="./Images/sun.png" alt="summer" class="icons" onclick="summer()" />
+            <img src="./Images/jacket.png" alt="Winter" class="icons" onclick="winter()" />
+            <img src="./Images/umbrella.png" alt="Mansoon" class="icons" onclick="Rainy()" />
         </div>
-        <div class="img_screen">
-            <img src="./Images/Summer.avif" alt="Summer" class="img_size"/>
+        <div>
+            <img src="./Images/Summer.avif" alt="Summer" class="img_size" id="season_image"/>
         </div>
         <h2 class="small_heading">Click On Icons to change Images</h2>
     </div>
+    <script>
+         function summer(){
+            const  image_screen = document.getElementById('season_image');
+            image_screen.src = './Images/summer.avif';
+         }
+         function winter(){
+            const image_screen = document.getElementById('season_image');
+            image_screen.src = './Images/Winter_season.jpg';
+         }
+         function Rainy(){
+            const image_screen= document.getElementById('season_image');
+            image_screen.src = './Images/rainy_season.avif';
+         }
+    </script>
 </body>
 </html>
