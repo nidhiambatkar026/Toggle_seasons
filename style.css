@@ -26,3 +26,15 @@
     transform: scale(1.1);
     cursor: pointer;
 }
+.img_size{
+    height: 500px;
+    width: 500px;
+    margin-left: 750px;
+    margin-top: -500px;
+}
+.small_heading{
+    text-align: center;
+    color: #594a4e;
+    font-size: 30px;
+    font-family: cursive;
+}
